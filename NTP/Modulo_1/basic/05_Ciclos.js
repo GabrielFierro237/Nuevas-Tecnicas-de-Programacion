@@ -23,3 +23,8 @@ for (const key in persona) {
 
 
 //forof
+var iterable = [1,2,3,4,5];
+var iterable2 = "Gabriel";
+for (const valor of iterable2) {
+    console.log(valor);
+}
