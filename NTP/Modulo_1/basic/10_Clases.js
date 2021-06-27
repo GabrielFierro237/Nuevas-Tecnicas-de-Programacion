@@ -107,5 +107,5 @@ class Estudiante extends Persona {
   }
 }
 
-estper = new Estudiante("Gabriel", "Alejandro");
+estper = new Estudiante("Gabriels", "Alejandro");
 console.log(estper.show());

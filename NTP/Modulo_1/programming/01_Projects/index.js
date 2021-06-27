@@ -1,12 +1,16 @@
-const express = require('express');
+const { query } = require("express");
+const express = require("express");
 
 //genero una aplicacion express
 const app = express();
-//endpoint
-app.get('/',(req, res) => {
-    res.send("Hola mundo con ExpressJs");
-});
+//ruotes
+
+const { RouterIndex } = require("./routes/deber");
+
+app.use("/deber-video", RouterIndex);
 
 app.listen(3000, () => {
-    console.log("Servidor escuchando en http://localhost:3000")
+  console.log("Servidor escuchando en http://localhost:3000");
 });
+
+//http://localhost:3000/saludo?nombre=Gabriel&apellido=Fierro
